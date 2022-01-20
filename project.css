@@ -108,7 +108,6 @@ html{
     font-size: 80px;
     max-width: 625px;
     max-height: 202px;
-    margin-left: 5.938rem;
         
 }
 
@@ -124,6 +123,7 @@ html{
 .container{ 
     display: flex;
     padding: 1rem;
+    justify-content: center;
 }
 .photo{ 
     margin-left: 7.506rem;
@@ -135,19 +135,19 @@ html{
 .button_color_login:hover{
     background-image: linear-gradient(to left,  #B79039, #FF8545);
     opacity: 0.8;
-    transition: 0.8s all ease;
+    transition: 0.8s all ease-out;
 }
 .movement{
     animation-name: image;
     position: relative;
-    animation-duration: 1s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
 }
 
 @keyframes image{
-    0%{top: 10px;
+    0%{top: 25px;
     bottom:0px;}
-    10%{top:0px; bottom: 10px;}
+    10%{top:0px; bottom: 25px;}
 }
 
  /* @media (min-width:320px) and (max-width: 425px){
@@ -193,21 +193,20 @@ html{
 }  */
 
 
+.article{
+    padding-bottom: 136px;
 
+}
 
 .container_heading{
     font-family: 'Poppins';
     font-size: 60px; 
     font-weight: bold;
     color: #FDA145;
-    
-    margin-left: 136px;
-    
+    max-width: 988px;
+    margin-left: 200px;
     text-align: center;
-    margin-right: 156px;
-    margin-top: 135.2px; 
-   
-    
+    margin-bottom: 51px;
 }
 .card_container{
     border: 0.1rem solid none ;
@@ -277,9 +276,8 @@ html{
 }
 .section_container{
     display: flex;
-    margin-left: 165px;
-    margin-top: 92px;  
-    margin-bottom: 117px;   
+    justify-content: center; 
+
 }
 .flip-card-inner{
   position: relative;
@@ -321,25 +319,33 @@ html{
 
 .integation_container{
     background-color: #6430B7;
-    margin-bottom: 45px;
     padding-top: 51px;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+   
+
 }
 .int_heading{
     font-family: 'poppins';
     font-weight: bold;
     color: white;
     font-size: 3.125rem;
-    margin-left: 307px;
-    margin-right: 561px;
+    padding-left: 165px;
+    padding-right: 523px;
+    max-width: 592px;
+    
 }
 .para_int{
     font-family: 'poppins';
     font-weight: normal;
     color: white;
     font-size: 1.125rem;
-    margin-left: 316px;
-    margin-right: 237px;
-    margin-top: 23px;
+    padding-left: 174px;
+    padding-right: 199px;
+    padding-bottom: 23px;
+    max-width: 907px;
+    
 }
 .action_link{
     background-color: #24093E;
@@ -351,17 +357,24 @@ html{
     font-family: 'poppins';
     font-weight: normal;
     font-size: 1.375rem;
-    margin-top: 36px;
-    margin-right: 15px;
     padding-left: 55px;
     padding-right: 55px;
     padding-bottom: 17px;
     padding-top: 21px;  
 }
+.actionc{
+    padding-bottom: 73px;
+    padding-left: 270px;
+    padding-right: 282px;
+}
 
+.action_link:hover{
+    background-image:linear-gradient(to right, #45E2FF, #45E2FF);
+    transition: .5s all;
+    color: black;
+}
 
-
-.action_link:before{
+.action_link::before{
    transition: 0.5s all ease;
    position: absolute;
    top: 0;
@@ -389,25 +402,28 @@ html{
     border-radius: 5.625rem;
     margin-top: 1rem;
     background-image: linear-gradient(to right, #39B2B7, #42D4EA, #45E2FF);
-    margin-bottom: 73px;
+   
     font-family: 'poppins';
     font-weight: bold;
     color: #311A8B;
     border:none;
     
 }
-.actionc{
-    margin-left: 307px;
-    margin-right: 282px;
+.action:hover{
+    transition: .5s all ease-in-out;
+    background-image: linear-gradient(to left, #39B2B7, #42D4EA, #45E2FF);
 }
+/* .actionc{
+    padding-left: 307px;
+    padding-right: 282px;
+} */
 
 
 
 
 
 .foot_container{
-    margin-left: 73.3px;
-    margin-bottom: 58px;
+    padding-top: 40px;
 }
 
 .links{
@@ -429,10 +445,7 @@ html{
 .links:hover{
     color: #FA3B6E;
     border: 2px solid #FA3B6E;
-    height: 3rem;
-    width: 15rem;
-    border-radius: 1.5rem;
-    margin-bottom: 0.5rem;
+
     font-family: 'poppins';
     font-weight: bold;
     background-color: transparent;
@@ -441,14 +454,10 @@ html{
 .link:hover{
     color: #FA3B6E;
     border: 2px solid #FA3B6E;
-    height: 3rem;
-    width: 15rem;
-    border-radius: 1.5rem;
-    margin-bottom: 0.5rem;
     font-family: 'poppins';
     font-weight: bold;
     background-color: transparent;
-    transition: 0.5s all;
+    transition: 0.5s all ease-in-out;
 }
 .alink{
     border: 2px solid black;
@@ -461,10 +470,7 @@ html{
 .alink:hover{
     color: #FA3B6E;
     border: 2px solid #FA3B6E;
-    height: 3rem;
-    width: 15rem;
-    border-radius: 1.5rem;
-    margin-bottom: 0.5rem;
+   
     font-family: 'poppins';
     font-weight: bold;
     background-color: transparent;
