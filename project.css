@@ -145,10 +145,14 @@ html{
 }
 
 @keyframes image{
-    0%{top: 25px;
-    bottom:0px;}
-    10%{top:0px; bottom: 25px;}
-}
+    0%, 100% {
+        bottom: 0;
+      }
+      50% {
+        bottom: 50px;
+      }
+    }
+
 
  /* @media (min-width:320px) and (max-width: 425px){
 
@@ -194,7 +198,7 @@ html{
 
 
 .article{
-    padding-bottom: 136px;
+    padding-bottom: 117px;
 
 }
 
@@ -204,7 +208,7 @@ html{
     font-weight: bold;
     color: #FDA145;
     max-width: 988px;
-    margin-left: 200px;
+    margin:auto;
     text-align: center;
     margin-bottom: 51px;
 }
